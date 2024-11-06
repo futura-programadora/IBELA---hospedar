@@ -1,0 +1,70 @@
+@charset "UTF=8";
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #9e9e9e;
+}
+
+.containerNotificacoes {
+    width: 100vw;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+}
+
+.headerNotificacoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.backIconNotificacoes {
+    font-size: 30px; /* Tamanho do ícone de voltar */
+    color: #000000;
+    text-decoration: none;
+}
+
+.backIconNotificacoes > span{
+    font-size: 45px;
+}
+
+.containerNotificacoes h2, #naoTemNotificacoes {
+    margin: auto;
+    text-align: center;
+    color: gray;
+    text-shadow: none;
+    text-decoration: none;
+}
+
+.notificacoes {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 80vh;
+    background-color: #dadada;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+
+/* Adaptação para dispositivos móveis */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;/*faz com que fique em colunas*/
+        align-items: flex-start;/*Alinha os itens dentro do contêiner flexível no início do eixo transversal. */
+    }
+
+    p, h2, h1 {
+        flex-wrap: wrap;
+    }
+
+    .notificacoes p, .notificacoes h2, .notificacoes h1 {
+        overflow-wrap: break-word; /* Quebra a palavra quando ultrapassa o limite */
+    }
+}

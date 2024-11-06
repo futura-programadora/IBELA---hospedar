@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    
+}
+
+.containerInicioAdmin {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+
+.headerInicioAdmin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 70px;
+    padding: 0 10px; /* Adicionado padding para garantir que os elementos fiquem dentro da tela */
+}
+
+.headerInicioAdmin .userInicioAdmin,
+.headerInicioAdmin .notificationInicioAdmin {
+    display: flex;
+    align-items: center;
+}
+
+.headerInicioAdmin .userInicioAdmin a,
+.headerInicioAdmin .notificationInicioAdmin a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.headerInicioAdmin .userInicioAdmin span,
+.headerInicioAdmin .notificationInicioAdmin span {
+    font-size: 45px;
+    color: white;
+}
+
+
+#textoCultosAgendadosInicioAdmin {
+    color: rgb(109, 109, 109);
+    text-decoration: none;
+    font-size: 1em;
+    padding: 20px;
+}
+
+#textoCultosAgendadosInicioAdmin {
+    /* centraliza tudo verticalmente e horizontalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(191, 187, 187);
+    border-radius: 10px;
+    width: 80vw;
+    height: 45px;
+    border: 1px solid black;
+}
+
+#comecarInicioAdmin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60vw; /* Ajuste a largura conforme necessário */
+    height: 40vh; /* Ajuste a altura conforme necessário */
+    background-color: #ffde59;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#comecarInicioAdmin:hover {
+    cursor: pointer;
+}
+
+#comecarInicioAdmin p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #000000;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a#comecarLiveInicioAdmin {
+    color: #000000;
+    font-size: 50px;
+}
+
+#comecarLiveInicioAdmin > span {
+    font-size: 70px;
+}
+
+#agendarLiveInicio > span {
+    font-size: 60px;
+}
+
+.agendarLiveInicioAdmin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60vw; /* Ajustei a largura diferente por isso repeti codigo */
+    height: 20vh; /* Ajustei a largura diferente por isso repeti codigo */
+    background-color: #ffde59;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+a#agendarLiveInicio{
+    color: #000000;
+    font-size: 50px;
+}
+
+p {
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.bookInicioAdmin > a > span {
+    color: black;
+    font-size: 60px;
+    width: 50px;
+    padding: 10px;
+}
+
+/* Adaptação para dispositivos móveis */
+@media (max-width: 768px) {
+    .headerInicioAdmin {
+        padding: 10px;
+    }
+
+    .headerInicioAdmin .user .material-icons,
+    .headerInicioAdmin .notification .material-icons {
+        font-size: 35px; /* Reduzido o tamanho dos ícones para caberem melhor em dispositivos móveis */
+    }
+
+    .live-section .link {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .live-section .link a {
+        margin-top: 10px;
+    }
+
+    .link-section input {
+        margin-bottom: 10px;
+    }
+
+    .link-section button {
+        margin-bottom: 10px;
+    }
+}
